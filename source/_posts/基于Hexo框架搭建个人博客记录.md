@@ -1,4 +1,8 @@
-# 基于Hexo框架搭建个人博客记录
+---
+title: 基于Hexo框架搭建个人博客记录
+date: 2024-05-09 22:50:45
+tags:
+---
 
 ## 操作流程
 
@@ -20,7 +24,85 @@
 
    ![image-20240509213110472](..\images\image-20240509213110472.png)
 
-   1. 到目前为止，我们的博客都是在本地的，因此需要挂载到服务器上，才能真正成为一个别人能访问的网页博客，我选择部署在GitHub上，运用了GitHub推出的GitHub Page功能，参考[官方部署文档](https://hexo.io/zh-cn/docs/github-pages)，
+5. 到目前为止，我们的博客都是在本地的，因此需要挂载到服务器上，才能真正成为一个别人能访问的网页博客，我选择部署在GitHub上，运用了GitHub推出的GitHub Page功能，参考[官方部署文档](https://hexo.io/zh-cn/docs/github-pages)，第一步要学怎么在GitHub建立一个库，此处为了学习git的一些知识，不打算使用官方提供的一键部署。
+
+   > 1. 首先在自己的GitHub上开一个库名字为`你的GitHub用户名.github.io`
+   >
+   > 2. 然后更改你的./blog名字为库的同名字，进入blog目录打开Git Bash，输入以下指令：
+   >
+   >    ```shell
+   >    git init
+   >    git add .
+   >    git commit -m "First init"
+   >    git branch -M main
+   >    git remote add origin 库URL（到你的库上复制下来，用来链接到库上的）
+   >    git push -u origin master
+   >    ```
+   >
+   >    输入以上指令，应该就成功上传库了，每次更新就再次输入最后一条指令就行了，你在新建库之后GitHub网页会给你提示，如下：
+   >
+   >    ![image-20240509221956778](..\images\image-20240509221956778.png)
+   >
+   > 3. 命令行输入`node -v`，查询并记下node的版本，我这里是`v20.12.0`。
+   >
+   > 4. 在GitHub你建立的库中选中`Settings > Pages > Source`，将其改为`GitHub Actions`。
+   >
+   > 5. 继续在网页端中建立`.github/workflows/pages.yml`（本人选择在本地写好后再次上传），填入以下内容并且更改版本号为本地版本号：
+   >
+   >    ```yaml
+   >    name: Pages
+   >
+   >    on:
+   >      push:
+   >        branches:
+   >          - main  # default branch
+   >
+   >    jobs:
+   >      build:
+   >        runs-on: ubuntu-latest
+   >        steps:
+   >          - uses: actions/checkout@v4
+   >            with:
+   >              token: ${{ secrets.GITHUB_TOKEN }}
+   >              # If your repository depends on submodule, please see: https://github.com/actions/checkout
+   >              submodules: recursive
+   >          - name: Use Node.js 20
+   >            uses: actions/setup-node@v4
+   >            with:
+   >              # Examples: 20, 18.19, >=16.20.2, lts/Iron, lts/Hydrogen, *, latest, current, node
+   >              # Ref: https://github.com/actions/setup-node#supported-version-syntax
+   >              node-version: '20'
+   >          - name: Cache NPM dependencies
+   >            uses: actions/cache@v4
+   >            with:
+   >              path: node_modules
+   >              key: ${{ runner.OS }}-npm-cache
+   >              restore-keys: |
+   >                ${{ runner.OS }}-npm-cache
+   >          - name: Install Dependencies
+   >            run: npm install
+   >          - name: Build
+   >            run: npm run build
+   >          - name: Upload Pages artifact
+   >            uses: actions/upload-pages-artifact@v3
+   >            with:
+   >              path: ./public
+   >      deploy:
+   >        needs: build
+   >        permissions:
+   >          pages: write
+   >          id-token: write
+   >        environment:
+   >          name: github-pages
+   >          url: ${{ steps.deployment.outputs.page_url }}
+   >        runs-on: ubuntu-latest
+   >        steps:
+   >          - name: Deploy to GitHub Pages
+   >            id: deployment
+   >            uses: actions/deploy-pages@v4
+   >    ```
+   >
+   > 6. 经历以上种种，你应该已经成功部署GitHub Page了，点开自己的链接看看吧！我的是[一只帕勒斯的小站](https://aplas-plus.github.io/)。
 
 
 
