@@ -132,3 +132,11 @@ tags:
 `hexo generate`
 
 `hexo g`
+
+
+
+## 参考文档
+
+[官方文档](https://hexo.io/zh-cn/docs/)
+
+[超详细！0成本搭建个人网站！！【建议收藏】](https://www.bilibili.com/video/BV1ts4y1f7Gu/?spm_id_from=333.788.recommend_more_video.-1&vd_source=99294a2a1c5504f559670de616463ae4)
