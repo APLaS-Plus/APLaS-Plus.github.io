@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 一只帕勒斯
-subtitle: '🧀副标题'
-description: '🧀网页介绍'
+title: The blog of APLaS
+subtitle: 
+description: 
 keywords:
-author: John Doe
+author: APLaS
 language: zh-cn
 timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://aplas-plus.github.io/
 # permalink: :year/:month/:day/:title/
 permalink: :category/:title/
 permalink_defaults:
@@ -73,8 +73,16 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
-tag_map:
+  - Techonology
+  - Rationality
 
+tag_map:
+  - Yolo
+  - Hexo
+  - Persional Deploy
+  - My thinking
+
+  
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true

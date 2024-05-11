@@ -11,11 +11,14 @@
 # Docs: https://redefine-docs.ohevan.com/basic/info
 info:
   # Site title
-  title: Theme Redefine
+  # title: Theme Redefine
+  title: The blog of APLaS
   # Author name
-  author: The Redefine Team
+  # author: The Redefine Team
+  author: APLaS
   # Site URL
-  url: https://redefine.ohevan.com
+  # url: https://redefine.ohevan.com
+  url: https://aplas-plus.github.io/
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -24,10 +27,12 @@ info:
 defaults:
   # Favicon
   favicon: /images/redefine-favicon.svg
+  # favicon: /images/Weixin Image_20231129220400.jpg
   # Site logo
   logo: 
   # Site avatar
-  avatar: /images/redefine-avatar.svg
+  # avatar: /images/redefine-avatar.svg
+  avatar: /images/Weixin Image_20231129220400.jpg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -117,10 +122,10 @@ home_banner:
     dark: /images/wallhaven-wqery6-dark.webp # dark mode
   # Home banner title
   # title: Theme Redefine
-  title: "🧀title"
+  title: "Welcome to my blog!"
   # Home banner subtitle
   subtitle:
-    text: [] # subtitle text, array
+    text: ["成为撬动世界的基石🫡"] # subtitle text, array
     hitokoto:  # 一言配置
       enable: false # Whether to enable hitokoto
       api: https://v1.hitokoto.cn # API URL, can add types, see https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
@@ -153,7 +158,7 @@ home_banner:
   # Home banner social links
   social_links:
     # Whether to enable
-    enable: false
+    enable: true
     # Social links style
     style: default # default, reverse, center
     # Social links
@@ -167,8 +172,8 @@ home_banner:
       email: snowsant7389@qq.com # your email
       # ...... # you can add more
     # Social links with QRcode drawers
-    qrs:
-      weixin:  # your Wechat QRcode image URL
+    # qrs:
+      # weixin:  # your Wechat QRcode image URL
       # ...... # you can add more
 # HOME BANNER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
@@ -177,7 +182,7 @@ home_banner:
 # Docs: https://redefine-docs.ohevan.com/home/navbar
 navbar:
   # Auto hide navbar
-  auto_hide: false
+  auto_hide: true
   # Navbar background color
   color:
     left: "#f78736" #left side 
@@ -229,7 +234,7 @@ home:
     enable: true # Whether to enable sidebar
     position: left # Sidebar position. left, right
     first_item: menu # First item in sidebar. menu, info
-    announcement: "🧀home" # Announcement text
+    announcement: "Home" # Announcement text
     show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
     links:
       Archives: 
@@ -251,7 +256,7 @@ home:
   # Article tags visibility
   tags:
     enable: true  # Whether to enable
-    limit: 3  # Max number of tags to display
+    limit: 10  # Max number of tags to display
 # HOME PAGE ARTICLE SETTINGS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -310,7 +315,7 @@ articles:
     # Whether to enable article recommendation
     enable: false
     # Article recommendation title
-    title: "🧀推荐阅读"
+    title: "Recommendation"
     # Max number of articles to display
     limit: 3
     # Max number of articles to display mobile
@@ -328,7 +333,7 @@ comment:
   # Whether to enable comment
   enable: true
   # Comment system
-  system: waline # waline, gitalk, twikoo, giscus
+  system: gitalk # waline, gitalk, twikoo, giscus
   # System configuration
   config:
     # Waline comment system. See https://waline.js.org/
@@ -340,10 +345,10 @@ comment:
       turnstileKey: # Turnstile key. See https://waline.js.org/reference/client/props.html#turnstilekey
     # Gitalk comment system. See https://github.com/gitalk/gitalk
     gitalk:
-      clientID: # GitHub Application Client ID
-      clientSecret: # GitHub Application Client Secret
-      repo: # GitHub repository
-      owner: # GitHub repository owner
+      clientID: Ov23liYeNEAkhYZMXxDA # GitHub Application Client ID
+      clientSecret: ddbcec32db78764b66b43017a6d02246f3dd46f9 # GitHub Application Client Secret
+      repo: personal-issue-bar # GitHub repository
+      owner: APLaS-Plus # GitHub repository owner
       proxy: # GitHub repository proxy
     # Twikoo comment system. See https://twikoo.js.org/
     twikoo:

@@ -2,7 +2,11 @@
 title: YOLOv5🚀上手记录
 typora-root-url: YOLOv5🚀上手记录
 date: 2024-05-11 18:54:20
+category: 
+   - Techonology
 tags:
+   - Yolo
+   - Persional Deploy
 ---
 
 ## 名词简介

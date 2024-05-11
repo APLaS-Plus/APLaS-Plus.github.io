@@ -2,12 +2,16 @@
 title: 基于Hexo框架搭建个人博客记录
 typora-root-url: 基于Hexo框架搭建个人博客记录
 date: 2024-05-11 01:58:39
+category: 
+   - Techonology
 tags: 
+   - Hexo
+   - Persional Deploy
 ---
 
 ## 操作
 
-### 在GitHub上部署自己的博客
+### 在GitHub上部署自己的博客 Deploy your blog on GitHub
 
 1. 下载并安装**git**和**node.js**。
 
@@ -23,7 +27,7 @@ tags:
    hexo server
    ```
 
-4. 在[官方主题网站](https://hexo.io/themes/)下载主题，参照主题里的官方文档下载对应的文件到`./blog/themes`文件夹内，每次更新可以进入对应主题文件夹内，打开Git Bash，输入`git pull`来进行更新，下载完根据官网文档，安装一些依赖库，将**Hexo**的配置文件 **.config.yml** 中变量themes的值改成你想要更改的主题的名字，Git Bash中输入`hexo g`更新网页，后面再启动服务就能看到更新后的主题了。除此之外，配置文件中还有很多别的变量也可以进行探索，以上在[官方文档](https://hexo.io/zh-cn/docs/)中有详细的描述。
+4. 在[官方主题网站](https://hexo.io/themes/)下载主题，参照主题里的官方文档下载对应的文件到`./blog/themes`文件夹内，每次更新可以进入对应主题文件夹内，打开Git Bash，输入`git pull`来进行更新，下载完根据官网文档，安装一些依赖库，将**Hexo**的gitalk中变量themes的值改成你想要更改的主题的名字，Git Bash中输入`hexo g`更新网页，后面再启动服务就能看到更新后的主题了。除此之外，配置文件中还有很多别的变量也可以进行探索，以上在[官方文档](https://hexo.io/zh-cn/docs/)中有详细的描述。
 
    ![n1](n1.png )
 
@@ -107,7 +111,7 @@ tags:
    >
    > 6. 经历以上种种，你应该已经成功部署GitHub Page了，点开自己的链接看看吧！我的是[一只帕勒斯的小站](https://aplas-plus.github.io/)。
 
-### 图片显示
+### 图片显示 Display of the picture
 
 我发现正常的上传md文件，其中的图片并不能正常显示，解决办法有两个，其一是在网络上上传图片，并贴上图片对应的url，其二是修改hexo的配置，使其能识别服务器上的图片，以下是我的操作过程：
 
@@ -131,7 +135,37 @@ tags:
 >
 > 5. 经历以上种种，想必你已经能在自己的博客上正常的显示图片了，恭喜你！🫡
 
+### 分类和标签 Categories and Tags
 
+文章的分类和贴标签对于一个长期更新博客的人的一个很重要的事情，下面是贴标签过程：
+
+1. 首先在配置文件 **_config.yaml** 文件中对`categories`值进行如下结构更改：
+
+   ```yaml
+   categories:
+   	- category1
+   	- category2
+   ```
+
+   增加category1和category2两个分类，增加tag的结构也是同样的。
+
+2. 然后在你的文章中的顶部配置区写上和上面一样结构的代码，就可以实现该功能，例如我的文章分类为category1，标签有tag1和tag2：
+
+   ```yaml
+   category:
+   	- category1
+   tag:
+   	- tag1
+   	- tag2
+   ```
+
+   想要方便的话可以在`scaffolds`文件夹下的`post.md`中加入一行`category: `，就能在生成文件的时候加上这句话了。
+
+   
+
+### GitHub登录评论 Commit by GitHub account
+
+能留下评论也是一个博客的重要功能，以下是使用了gitalk来实现的评论功能，由于这里比较简单，我直接贴我用的主题的[官方文档](https://redefine-docs.ohevan.com/posts/comment)了。
 
 
 
