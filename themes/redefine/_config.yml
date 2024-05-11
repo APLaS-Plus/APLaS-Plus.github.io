@@ -347,7 +347,7 @@ comment:
     gitalk:
       clientID: Ov23liYeNEAkhYZMXxDA # GitHub Application Client ID
       clientSecret: ddbcec32db78764b66b43017a6d02246f3dd46f9 # GitHub Application Client Secret
-      repo: personal-issue-bar # GitHub repository
+      repo: APLaS_Blog # GitHub repository
       owner: APLaS-Plus # GitHub repository owner
       proxy: # GitHub repository proxy
     # Twikoo comment system. See https://twikoo.js.org/
