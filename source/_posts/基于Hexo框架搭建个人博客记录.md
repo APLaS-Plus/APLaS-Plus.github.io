@@ -167,6 +167,8 @@ tags:
 
 能留下评论也是一个博客的重要功能，以下是使用了gitalk来实现的评论功能，由于这里比较简单，我直接贴我用的主题的[官方文档](https://redefine-docs.ohevan.com/posts/comment)了。
 
+尝试了gitalk之后，不知道为什么不行，但是gitcus可以正常使用。
+
 
 
 ## Hexo框架常用指令

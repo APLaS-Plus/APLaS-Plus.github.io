@@ -118,8 +118,10 @@ home_banner:
   style: fixed # static or fixed
   # Home banner image
   image: 
-    light: /images/wallhaven-wqery6-light.webp # light mode
-    dark: /images/wallhaven-wqery6-dark.webp # dark mode
+    # light: /images/wallhaven-wqery6-light.webp # light mode
+    # dark: /images/wallhaven-wqery6-dark.webp # dark mode
+    light: /images/little_sun.jpg
+    dark: /images/little_sun.jpg
   # Home banner title
   # title: Theme Redefine
   title: "Welcome to my blog!"
@@ -240,12 +242,12 @@ home:
       Archives: 
         path: /archives 
         icon: fa-regular fa-archive # can be empty
-      Tags: 
-        path: /tags 
-        icon: fa-regular fa-tags # can be empty
-      Categories: 
-        path: /categories 
-        icon: fa-regular fa-folder # can be empty
+      # Tags: 
+      #   path: /tags 
+      #   icon: fa-regular fa-tags # can be empty
+      # Categories: 
+      #   path: /categories 
+      #   icon: fa-regular fa-folder # can be empty
       # ...... # you can add more
   # Article date format
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
