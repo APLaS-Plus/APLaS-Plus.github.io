@@ -1,6 +1,6 @@
 ---
 title: 基于Hexo框架搭建个人博客记录
-typora-root-url: hexoBuild
+typora-root-url: 基于Hexo框架搭建个人博客记录
 date: 2024-05-11 01:58:39
 tags: 
 ---
