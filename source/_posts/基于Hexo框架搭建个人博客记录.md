@@ -1,8 +1,11 @@
 ---
 title: 基于Hexo框架搭建个人博客记录
-date: 2024-05-09 22:50:45
-tags:
+typora-root-url: hexoBuild
+date: 2024-05-11 01:58:39
+tags: 
 ---
+
+# 基于Hexo框架搭建个人博客记录
 
 ## 操作流程
 
@@ -20,9 +23,9 @@ tags:
    hexo server
    ```
 
-4. 在[官方主题网站](https://hexo.io/themes/)下载主题，参照主题里的官方文档下载对应的文件到`./blog/themes`文件夹内，每次更新可以进入对应主题文件夹内，打开Git Bash，输入`git pull`来进行更新，下载完根据官网文档，安装一些依赖库，将**Hexo**的配置文件**.config.yml**中变量themes的值改成你想要更改的主题的名字，Git Bash中输入`hexo g`更新网页，后面再启动服务就能看到更新后的主题了。除此之外，配置文件中还有很多别的变量也可以进行探索，以上在[官方文档](https://hexo.io/zh-cn/docs/)中有详细的描述。
+4. 在[官方主题网站](https://hexo.io/themes/)下载主题，参照主题里的官方文档下载对应的文件到`./blog/themes`文件夹内，每次更新可以进入对应主题文件夹内，打开Git Bash，输入`git pull`来进行更新，下载完根据官网文档，安装一些依赖库，将**Hexo**的配置文件 **.config.yml** 中变量themes的值改成你想要更改的主题的名字，Git Bash中输入`hexo g`更新网页，后面再启动服务就能看到更新后的主题了。除此之外，配置文件中还有很多别的变量也可以进行探索，以上在[官方文档](https://hexo.io/zh-cn/docs/)中有详细的描述。
 
-   ![image-20240509213110472](..\images\image-20240509213110472.png)
+   ![](n1.png )
 
 5. 到目前为止，我们的博客都是在本地的，因此需要挂载到服务器上，才能真正成为一个别人能访问的网页博客，我选择部署在GitHub上，运用了GitHub推出的GitHub Page功能，参考[官方部署文档](https://hexo.io/zh-cn/docs/github-pages)，第一步要学怎么在GitHub建立一个库，此处为了学习git的一些知识，不打算使用官方提供的一键部署。
 
@@ -41,7 +44,7 @@ tags:
    >
    >    输入以上指令，应该就成功上传库了，每次更新就再次输入最后一条指令就行了，你在新建库之后GitHub网页会给你提示，如下：
    >
-   >    ![image-20240509221956778](..\images\image-20240509221956778.png)
+   >    ![](n2.png)
    >
    > 3. 命令行输入`node -v`，查询并记下node的版本，我这里是`v20.12.0`。
    >
@@ -51,12 +54,12 @@ tags:
    >
    >    ```yaml
    >    name: Pages
-   >
+   >    
    >    on:
    >      push:
    >        branches:
    >          - main  # default branch
-   >
+   >    
    >    jobs:
    >      build:
    >        runs-on: ubuntu-latest
