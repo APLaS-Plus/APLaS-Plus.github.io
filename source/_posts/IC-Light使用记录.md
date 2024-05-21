@@ -72,7 +72,7 @@ IC-Light全称 **\"Imposing Consistent Light\"** ，意为施加固定光源，�
 
    看着还不错🫡，甚至耳朵的透光他也理解了，就是这个后腿，模型应该理解成肥腿猫了😏。
 
-   ![img](image (1).jpeg)
+   ![img](image.jpeg)
 
    就是这个时间。。
 
