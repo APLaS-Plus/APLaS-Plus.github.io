@@ -3,7 +3,9 @@ title: IC-Light使用记录
 typora-root-url: IC-Light使用记录
 date: 2024-05-21 22:44:39
 category:
+  - Technology
 tags:
+  - Persional Deploy
 ---
 
 ## 简介

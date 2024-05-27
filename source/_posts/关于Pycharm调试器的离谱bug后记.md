@@ -3,9 +3,9 @@ title: 关于Pycharm调试器的离谱bug后记
 typora-root-url: 关于Pycharm调试器的离谱bug后记
 date: 2024-05-27 14:05:16
 category:
--Record
+  - Record
 tags:
--Record
+  - Record
 ---
 
 ## 事情简述
