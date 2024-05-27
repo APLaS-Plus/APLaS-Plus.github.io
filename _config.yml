@@ -75,12 +75,14 @@ default_category: uncategorized
 category_map:
   - Techonology
   - Rationality
+  - Record
 
 tag_map:
   - Yolo
   - Hexo
   - Persional Deploy
   - My thinking
+  - Record
 
   
 # Metadata elements

@@ -180,10 +180,6 @@ perspective: 0.01  # image perspective (+/- fraction), range 0-0.001
 
 	[解决方法](https://blog.csdn.net/qq_63034152/article/details/131626091)：该篇文章的评论区的大神提到的方法
 
-
-
-
-
 ## 配置
 
 * 系统环境：win11家庭版
