@@ -43,7 +43,7 @@ tags:
    >    git commit -m "First init"
    >    git branch -M main
    >    git remote add origin 库URL（到你的库上复制下来，用来链接到库上的）
-   >    git push -u origin master
+   >    git push -u origin main
    >    ```
    >
    >    输入以上指令，应该就成功上传库了，每次更新就再次输入最后一条指令就行了，你在新建库之后GitHub网页会给你提示，如下：
