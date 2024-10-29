@@ -71,7 +71,8 @@ hexo.extend.helper.register(
         ? labelList[labelList.length - 1]
         : labelList[level - 1];
     } else {
-      return `Lv${level}`;
+      // return `Lv${level}`;
+      return 'Lv114514';
     }
   },
 );
