@@ -6,7 +6,8 @@ category:
    - Techonology
 tags: 
    - Hexo
-   - Persional Deploy
+   - GitHub Pages
+   - Blog
 ---
 
 ## 操作

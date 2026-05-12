@@ -5,7 +5,9 @@ date: 2024-05-21 22:44:39
 category:
   - Technology
 tags:
-  - Persional Deploy
+  - IC-Light
+  - AIGC
+  - Relighting
 ---
 
 ## 简介

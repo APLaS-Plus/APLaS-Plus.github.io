@@ -5,7 +5,8 @@ date: 2024-05-27 14:05:16
 category:
   - Record
 tags:
-  - Record
+  - PyCharm
+  - Debugging
 ---
 
 ## 事情简述

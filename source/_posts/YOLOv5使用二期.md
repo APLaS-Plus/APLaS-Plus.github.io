@@ -5,8 +5,9 @@ date: 2024-05-11 18:56:28
 category: 
    - Techonology
 tags:
-   - Yolo
-   - Persional Deploy
+   - YOLO
+   - PyTorch
+   - Dataset
 ---
 
 ## 简述
