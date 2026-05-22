@@ -3,7 +3,7 @@ title: YOLOv5使用二期
 typora-root-url: YOLOv5使用二期
 date: 2024-05-11 18:56:28
 category: 
-   - Techonology
+   - Technology
 tags:
    - YOLO
    - PyTorch

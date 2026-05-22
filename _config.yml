@@ -4,9 +4,9 @@
 
 # Site
 title: The blog of APLaS
-subtitle: 
-description: 
-keywords:
+subtitle:
+description: 'APLaS 的技术博客 — 记录深度学习、强化学习、模型部署等领域的学习笔记与思考'
+keywords: '深度学习, 强化学习, YOLO, 模型部署, 技术博客, Hexo'
 author: APLaS
 language: zh-cn
 timezone: 'Asia/Shanghai'
@@ -73,14 +73,14 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
-  - Techonology
+  - Technology
   - Rationality
   - Record
 
 tag_map:
   - Yolo
   - Hexo
-  - Persional Deploy
+  - Personal Deploy
   - My thinking
   - Record
 

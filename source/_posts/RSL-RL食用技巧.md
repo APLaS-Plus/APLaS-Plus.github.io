@@ -247,8 +247,8 @@ $\Omega()$代表了函数的渐进下界，n0是输入维度，n是每一层 hid
 
 | 名字 | 函数                                                         | 曲线                                              |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------- |
-| elu  | $\text{ELU}(x) = \begin{cases} x, & \text{ if } x > 0\\\ \alpha * (\exp(x) - 1), & \text{ if } x \leq 0 \end{cases}$ | <img src="/ELU.png" alt="ELU 曲线" width="240">   |
-| tanh | $\tanh(x) = \frac{\exp(x) - \exp(-x)} {\exp(x) + \exp(-x)}$  | <img src="/Tanh.png" alt="Tanh 曲线" width="240"> |
+| elu  | $\text{ELU}(x) = \begin{cases} x, & \text{ if } x > 0\\\ \alpha * (\exp(x) - 1), & \text{ if } x \leq 0 \end{cases}$ | <img src="ELU.png" alt="ELU 曲线" width="240">   |
+| tanh | $\tanh(x) = \frac{\exp(x) - \exp(-x)} {\exp(x) + \exp(-x)}$  | <img src="Tanh.png" alt="Tanh 曲线" width="240"> |
 
 RL 里比较通用的激活函数，特别是用在线性层时，往往更偏向保留负半轴信息、并且激活更平滑的函数。在大部分 RL 任务里，负区间的信息都相当重要，比如角色控制需要左右、前后移动，就一定会有负区间信息；像 ReLU 这种截断型函数，通常不太适合这类低维状态输入的策略网络。这是从 obs 的数据分布来说的；如果你的输入天然几乎全是正的，比如用视觉输入训练 Atari 类任务，那么 ReLU 也可以作为一个可选项。
 

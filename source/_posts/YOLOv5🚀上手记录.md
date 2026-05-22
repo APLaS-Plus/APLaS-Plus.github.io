@@ -3,7 +3,7 @@ title: YOLOv5🚀上手记录
 typora-root-url: YOLOv5🚀上手记录
 date: 2024-05-11 18:54:20
 category: 
-   - Techonology
+   - Technology
 tags:
    - YOLO
    - PyTorch
@@ -116,12 +116,12 @@ tags:
    
    原理是pyhton识别不了这类字符，他们不在utf-8和GBK的编码体系中，类似下面这种情况：
    
-   ![image-20240402171214308](E:\707\FW\png\image-20240402171214308.png)
+   ![image-20240402171214308](image-20240402171214308.png)
 
 > 参考文档：[小火箭“🚀”删除](https://wanghao.blog.csdn.net/article/details/128225609?spm=1001.2101.3001.6650.10&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-10-128225609-blog-122971106.235%5Ev43%5Epc_blog_bottom_relevance_base7&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-10-128225609-blog-122971106.235%5Ev43%5Epc_blog_bottom_relevance_base7) [左箭头“←”删除](https://blog.csdn.net/shuangshuangboole/article/details/131420080?spm=1001.2014.3001.5502)
 
 2. 这个坑点会遇到完全是因为开始学的时候照搬了学长的教程。`data.yaml`中**nc**的值一定要是你**测试集中的类别数**，否则出现报错如下，意思是存在标签编号大于标签数的情况：
 
-   ![image-20240402172046895](E:\707\FW\png\image-20240402172046895.png)
+   ![image-20240402172046895](image-20240402172046895.png)
 
 > 参考文档：[该网址的2.1节](https://www.cnblogs.com/zhaoyingjie/p/14620817.html)
