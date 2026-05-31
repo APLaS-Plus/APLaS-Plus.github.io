@@ -44,7 +44,7 @@ render_drafts: false
 # hexo-renderer-marked (picture insert)
 post_asset_folder: true
 marked:
-  prependRoot: true
+  prependRoot: false
   postAsset: true
 
 relative_link: false
